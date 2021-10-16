@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_500sdp"
+
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+        -->
+
+    <!-- this piece of code is for finger print-->
+
+<!--
+    <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
+        android:id="@+id/imageV1"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_300sdp"
+        app:src="@drawable/sample"
+        />
+
+-->
+    <RelativeLayout
+        android:id="@+id/playground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.easystudio.rotateimageview.RotateZoomImageView
+            android:id="@+id/rotate"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+             />
+    </RelativeLayout>
+
+
+<!-- this is shetal kumaar project -->
+    <!--
+        <com.impulsive.zoomimageview.ZoomImageView
+            android:id="@+id/imageV1"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_250sdp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="matrix"
+        android:src="@mipmap/ic_launcher"
+
+        app:rotation="true"
+        app:scaledown="false"
+        tools:ignore="MissingClass" />
+-->
+
+
+    <!--
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gallery"
+        android:text="gallery">
+
+    </Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/camera"
+        android:text="camera"
+        android:layout_toRightOf="@+id/gallery">
+
+    </Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:text="text"
+        android:layout_toRightOf="@+id/camera">
+
+    </Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/download"
+        android:text="download"
+        android:layout_toRightOf="@+id/text">
+
+    </Button>
+
+</LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/collageBgView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_400sdp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:background="#FFD4B083" />
+        <ImageView
+            android:id="@+id/collageVeiw1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_400sdp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:background="#FFD4B083" />
+
+    </FrameLayout>
+-->
+
+
+    </LinearLayout>

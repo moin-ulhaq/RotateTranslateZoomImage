@@ -1,0 +1,60 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.example.rotatetranslatezoomimage"
+        minSdk 22
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    //implementation 'com.github.abalta:swappy-image-view:1.0.0'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.github.sheetalkumar105:ZoomImageView-android:1.02'
+
+    //  new finger print code
+    implementation 'com.davemorrissey.labs:subsampling-scale-image-view-androidx:3.10.0'
+
+    //    lau1944 code
+    implementation 'com.github.lau1944:Zoom-Drag-Rotate-ImageView:1.0.0'
+
+    //    mike ortiz code
+ //   implementation ' com.github.MikeOrtiz:TouchImageView:$LAST_VERSION'
+// old code for drag,zoom,rotate
+    // implementation 'com.github.lau1944:Zoom-Drag-Rotate-ImageView:currentversion'
+
+    //implementation 'com.github.chrisbanes:PhotoView:latest.release.here'
+
+
+    // implementation 'com.davemorrissey.labs:subsampling-scale-image-view:3.10.0'
+   //  implementation 'com.davemorrissey.labs:subsampling-scale-image-view-androidx:3.10.0'
+}
